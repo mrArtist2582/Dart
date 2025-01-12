@@ -1,0 +1,39 @@
+Imagine ordering food in a restaurant. You place the order and wait for it to be prepared.
+ While waiting, you can talk with friends, check your phone, or do other things. 
+ The food preparation is happening in the background, and you get notified when it’s ready.
+
+In programming:
+
+Synchronous: You wait and do nothing else until the food arrives (code runs one task at a time).
+Asynchronous: You can continue doing other things while waiting for the food (code can handle multiple tasks without waiting).
+
+
+-> (1) Future Keyword : A Future represents a task that will finish in the future.
+                       For example, waiting for food to be prepared.
+
+                     (O)  Future.delayed : simulates the time taken to prepare pizza.
+                     (O)  .then : is used to handle the task after it’s done.
+
+
+-> (2) async/await : async/await makes asynchronous code easier to read.
+                     like you’re writing normal step-by-step instructions.
+
+                    (O) async : is added to the function to show it will run asynchronously.
+                    (O) await : pauses the code until the pizza is ready.
+
+-> (3) Streams       : A Stream is used when you receive data in parts, like updates or live events.                    
+                      
+                      (O) async* : keyword is used to create an asynchronous generator. 
+                                   It allows the function to produce values one at a time. 
+                      (O) Stream : updates like a delivery tracking system.
+                      (O) yield  : This keyword is like saying, "Here’s the next piece of data." 
+                                   It sends the value to the Stream listener.
+                      (O) listen : handles the updates as they arrive.   
+                      (O) Future.delayed: This simulates a delay.
+                                           (e.g., waiting for real-world events to happen).
+          
+=> Summary :
+
+                    Future: One-time task like ordering pizza.
+                    async/await: A cleaner way to handle Futures, like waiting for pizza step by step.
+                    Stream: Continuous updates, like tracking your pizza delivery.                     
